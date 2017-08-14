@@ -66,7 +66,7 @@ WindowsMT.cpu_pin <- function(n_request,
     core_affinity <- sum(core_steal * 2 ^ ((1:length(core_steal)) - 1))
     
     if (test == FALSE) {
-      cat("Pinning [1-", n_cores, "] performed on ", sum(core_steal), " cores {", paste(which(core_steal), collapse = ", "), "} (", core_affinity, ").\n  ", sep = "")
+      cat("Pinning [1-", n_cores, "] performed on ", sum(core_steal), " cores {", paste(which(core_steal), collapse = ", "), "} (", core_affinity, ").  \n", sep = "")
     }
     
     # Windows-only version!
