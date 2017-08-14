@@ -1,8 +1,8 @@
 #' Windows CPU Pinning
 #' 
-#' This function pins CPU on Windows depending on the number of cores requested
+#' This function pins CPU on Windows depending on the number of cores requested.
 #' 
-#' CPU pinning forces the first group of appropriate cores to be pinned.
+#' CPU pinning forces the first group of appropriate cores to be pinned. It handles hyperthreaded cores correctly by trying to avoid them. It has a parameter for the sockets, but it is currently unused.
 #' 
 #' @param n_request Type: integer. Number of logical cores to pin.
 #' @param n_cores Type: integer. Number of logical cores on your machine. Defaults to \code{as.integer(Sys.getenv("NUMBER_OF_PROCESSORS"))}.

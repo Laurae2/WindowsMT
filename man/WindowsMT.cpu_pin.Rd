@@ -22,10 +22,10 @@ WindowsMT.cpu_pin(n_request,
 \item{test}{Type: logical. Whether to just print the pinning without performing the pinning (placebo if \code{TRUE}). Defaults to \code{FALSE}.}
 }
 \description{
-This function pins CPU on Windows depending on the number of cores requested
+This function pins CPU on Windows depending on the number of cores requested.
 }
 \details{
-CPU pinning forces the first group of appropriate cores to be pinned.
+CPU pinning forces the first group of appropriate cores to be pinned. It handles hyperthreaded cores correctly by trying to avoid them. It has a parameter for the sockets, but it is currently unused.
 }
 \examples{
 \dontrun{
