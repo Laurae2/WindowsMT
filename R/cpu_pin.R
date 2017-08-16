@@ -1,6 +1,6 @@
 #' Windows CPU Pinning
 #' 
-#' This function pins CPU on Windows depending on the number of cores requested.
+#' Pins CPU on Windows depending on the number of cores requested.
 #' 
 #' CPU pinning forces the first group of appropriate cores to be pinned. It handles hyperthreaded cores correctly by trying to avoid them. It has a parameter for the sockets, but it is currently unused.
 #' 
